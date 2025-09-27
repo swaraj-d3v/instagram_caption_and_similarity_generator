@@ -77,8 +77,5 @@ This project is licensed under the MIT License.
 Made with ❤️ by Swaraj Shinde
 
 
----
+Most imp o can do this without txt and pkl by using ai ill give that code too as app1.py check that out
 
-I can also make a **ready-to-use screenshot/GIF workflow** section so your GitHub looks even more impressive to HRs.  
-
-Do you want me to add that next?
