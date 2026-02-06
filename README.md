@@ -1,4 +1,4 @@
-# 📸 Instagram Caption & Hashtag Recommender
+# Image Captioning & Hashtag Recommender
 
 Upload an image and get **recommended captions and hashtags** instantly! This project uses state-of-the-art AI models to generate relevant captions and hashtags based on the content of your images.
 
