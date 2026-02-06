@@ -1,4 +1,4 @@
-# Image Captioning & Hashtag Recommender
+# Image Captioning & Similarity Retrieval
 
 Upload an image and get **recommended captions and hashtags** instantly! This project uses state-of-the-art AI models to generate relevant captions and hashtags based on the content of your images.
 
