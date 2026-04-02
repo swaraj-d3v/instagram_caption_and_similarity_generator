@@ -1,81 +1,89 @@
-# Image Captioning & Similarity Retrieval
+# Instagram Caption & Hashtag Generator
 
-Upload an image and get **recommended captions and hashtags** instantly! This project uses state-of-the-art AI models to generate relevant captions and hashtags based on the content of your images.
-
----
-
-## Features
-
-- Upload any image (JPG, JPEG, PNG) and get recommendations.  
-- **Caption Recommendation:** Generate creative captions automatically.  
-- **Hashtag Recommendation:** Suggest relevant hashtags for better reach.  
-- Interactive GUI built with **Streamlit**.  
-- Fast and easy to use for Instagram content creators.
+Upload any image and get AI-generated captions and hashtags instantly. Built for content creators who want to stop staring at a blank caption box.
 
 ---
 
-## Demo
+## What it does
 
-![App Demo](demoelephant.png)  <img width="466" height="715" alt="Screenshot 2025-09-27 190630" src="https://github.com/user-attachments/assets/dbf1af1d-07e0-47e0-b993-b412a149b44e" />
+- Upload a JPG, JPEG, or PNG image
+- Get 3–5 caption suggestions generated from the image content
+- Get relevant hashtag recommendations automatically
+- Clean Streamlit UI — no technical knowledge needed to use it
 
+---
 
+## Why I built this
+
+I kept seeing content creators spending 10–15 minutes writing captions for photos. This tool does it in under 3 seconds using computer vision + NLP. Two versions included — one uses a pre-trained model file, one calls the AI model directly (no `.pkl` file needed).
+
+---
+
+## Tech stack
+
+- **Image understanding:** BLIP (Salesforce) via Hugging Face Transformers
+- **Text processing:** NLTK
+- **UI:** Streamlit
+- **Language:** Python 3.10+
 
 ---
 
 ## Installation
 
-1. Clone this repository:
+```bash
+git clone https://github.com/swaraj-d3v/instagram_caption_and_similarity_generator
+cd instagram_caption_and_similarity_generator
+pip install -r requirements.txt
+```
+
+---
+
+## Usage
 
 ```bash
-git clone https://github.com/swarajshinde12/instagram_caption_recommender.git
-cd instagram_caption_recommender
-
-# Install dependencies:
-
-python -m pip install -r requirements.txt
-
-Usage
-
-Run the Streamlit app:
-
+# Version 1 — uses pre-trained model file
 streamlit run app.py
 
+# Version 2 — direct AI inference, no .pkl needed
+streamlit run app1.py
+```
 
-Upload your image.
+Upload your image → get captions and hashtags instantly.
 
-See caption and hashtag recommendations instantly.
+---
 
-Folder Structure
-instagram_caption_recommender/
-│
-├─ app.py               # Main Streamlit app
-├─ utils.py             # Helper functions
-├─ models/
-│   └─ caption_model.pkl  # Pre-trained model
-├─ data/
-│   └─ captions.txt     # Caption dataset
-├─ requirements.txt     # Python dependencies
-├─ setup.ps1            # Setup script (Windows)
-└─ .gitignore           # Ignore unnecessary files
+## Demo
 
-Technologies Used
+![App demo](demoelephant.png)
 
-Python 3.13
+---
 
-Streamlit
+## Project structure
 
-Hugging Face Transformers (BLIP)
+```
+instagram_caption_and_similarity_generator/
+├── app.py              # Streamlit app (model file version)
+├── app1.py             # Streamlit app (direct inference version)
+├── utils.py            # Helper functions
+├── models/
+│   └── caption_model.pkl
+├── data/
+│   └── captions.txt
+├── requirements.txt
+├── setup.ps1           # Windows setup script
+└── .gitignore
+```
 
-NLTK (text processing)
+---
 
-scikit-learn / Pickle (model handling)
+## Author
 
-License
+**Swaraj Vijay Shinde**  
+Final Year B.Tech — Data Science  
+[LinkedIn](https://www.linkedin.com/in/swaraj-shinde-3b8631223) · [GitHub](https://github.com/swaraj-d3v)
 
-This project is licensed under the MIT License.
+---
 
-Made with ❤️ by Swaraj Shinde
+## License
 
-
-Most imp o can do this without txt and pkl by using ai ill give that code too as app1.py check that out
-
+MIT
